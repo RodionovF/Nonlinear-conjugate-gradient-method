@@ -1,0 +1,5 @@
+﻿  Source.cpp
+d:\университет\университет\численные методы\лабораторные\ch_m_method_sopr_grad_ver_1.0\ch_m_method_sopr_grad_ver_1.0\source.cpp(20): warning C4101: 'c': unreferenced local variable
+d:\университет\университет\численные методы\лабораторные\ch_m_method_sopr_grad_ver_1.0\ch_m_method_sopr_grad_ver_1.0\source.cpp(53): warning C4101: 'v_new': unreferenced local variable
+d:\университет\университет\численные методы\лабораторные\ch_m_method_sopr_grad_ver_1.0\ch_m_method_sopr_grad_ver_1.0\source.cpp(52): warning C4101: 'v_old': unreferenced local variable
+  CH_M_Method_Sopr_Grad_ver_1.0.vcxproj -> D:\Университет\Университет\Численные методы\Лабораторные\CH_M_Method_Sopr_Grad_ver_1.0\Debug\CH_M_Method_Sopr_Grad_ver_1.0.exe
