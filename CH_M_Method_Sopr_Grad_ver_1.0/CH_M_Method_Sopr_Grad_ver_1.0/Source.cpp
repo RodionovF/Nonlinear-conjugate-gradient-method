@@ -514,7 +514,7 @@ int main()
 				
 				S = S + 1;
 
-				if (((eps_cur)>0 && (eps_cur<eps)) || (S >= Nmax)) { flag = true; }
+				if (((eps_cur) >= 0 && (eps_cur<eps) && S != 0) || (S >= Nmax)) { flag = true; }
 			}
 
 			cout << endl;
@@ -548,9 +548,10 @@ int main()
 			}
 
 			cout << endl;
-			cout << "i=0.." << n << ". j=0.." << m << endl;
-			cout << "Обеспечивающее точность= " << eps_cur << endl;
-
+			cout << endl;
+			//cout << "i=0.." << n << ". j=0.." << m << endl;
+			cout << "Обеспечивающее точность= " << abs(eps_cur) << endl;
+			cout << endl;
 			cout << "Сравнение истинного и численного решений" << endl;
 
 
