@@ -34,7 +34,7 @@ int main()
 
 		setlocale(0, "rus");
 		int Nmax = 0;
-		int S = 0;
+		int S = -1;
 		double eps = 0.00000000000001;
 		double eps_max = 0;
 		double eps_cur = 0;
@@ -111,7 +111,7 @@ int main()
 					}
 					c1 = 0;
 					c2 = 0;
-					if (S > 0) {
+					if (S > -1) {
 						//посчитаем невязку
 						for (int i = 0; i < size; i++)
 						{
@@ -124,7 +124,7 @@ int main()
 							R[i] -= B_another_size[i];
 						}
 					}
-					if (S == 1)
+					if (S == 0)
 					{
 						for (int i = 0; i < size; i++)
 						{
@@ -153,7 +153,7 @@ int main()
 					}
 					c1 = 0;
 					c2 = 0;
-					if (S > 1)
+					if (S > 0)
 					{
 						{
 							for (int i = 0; i < size; i++)
@@ -397,18 +397,7 @@ int main()
 				}
 			}
 
-			/*size = 2;
-			A_matrix[0][0] = 3;
-			A_matrix[0][1] = 1;
-			A_matrix[1][0] = 1;
-			A_matrix[1][1] = 8;
-			B_another_size[0] = 7;
-			B_another_size[1] = 10;
-			v_another_size[0] = 0;
-			v_another_size[1] = 1;
-			double aa = 0;
-			double aabb = 0;
-			double aacc = 0;*/
+			
 			while (!flag)
 			{
 				for (int i = 0; i < size; i++)
@@ -417,7 +406,7 @@ int main()
 				}
 				c1 = 0;
 				c2 = 0;
-				if (S > 0) {
+				if (S > -1) {
 					//посчитаем невязку
 					for (int i = 0; i < size; i++)
 					{
@@ -430,7 +419,7 @@ int main()
 						R[i] -= B_another_size[i];
 					}
 				}
-				if (S == 1)
+				if (S == 0)
 				{
 					for (int i = 0; i < size; i++)
 					{
@@ -459,7 +448,7 @@ int main()
 				}
 				c1 = 0;
 				c2 = 0;
-				if (S > 1)
+				if (S > 0)
 				{
 					{
 						for (int i = 0; i < size; i++)
