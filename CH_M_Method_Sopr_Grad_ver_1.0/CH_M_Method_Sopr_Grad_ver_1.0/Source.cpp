@@ -15,18 +15,18 @@ double setfunc(double x, double y)
 	return 1 - x * x - y * y;
 }
 
-void proverka (int n, int m)
+void proverka(int n, int m)
 {
 
 	if ((n == 1) || (n == 2) || (m == 1) || (m == 2))
 	{
-		cout << "Размер сетки должен быть больше двух" << endl;
+		cout << "Cетка слишком маленькая, введите ещё раз" << endl;
 		cin >> n >> m;
 		proverka(n, m);
 	}
-	
-	
 }
+
+
 int main()
 {
 	char c;
@@ -255,14 +255,8 @@ int main()
 		else {
 			cout << endl;
 			cout << "Введите размерность сетки nxm" << endl;
-			
 			cin >> n >> m;
 			proverka(n, m);
-			/*if ((n == 1)||(n == 2)||(m == 1)||(m == 2))
-			{
-				cout << "Размер сетки должен быть больше двух" << endl;
-				cin >> n >> m;
-			}*/
 			cout << "Введите максимальное число шагов" << endl;
 			cin >> Nmax;
 
@@ -545,7 +539,7 @@ int main()
 			cout << "За число итераций S = " << S << endl;
 			cout << "Получено решение " << endl;
 			//Можно посмотреть разностную схему ввиде СЛАУ
-			for (int i = 0; i < size; i++)  
+		/*	for (int i = 0; i < size; i++)  
 			{
 				cout << endl;
 				for (int j = 0; j < size; j++)
@@ -553,7 +547,7 @@ int main()
 					cout << A_matrix[i][j] << "  ";
 				}
 				cout << " = " << B_another_size[i];
-			}
+			}*/
 			cout << endl;
 			cout << endl;
 
